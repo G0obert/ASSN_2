@@ -1,1 +1,17 @@
-body {}
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+    .background{
+
+    }
+    .top-nav {
+        display: flex; 
+        gap: 22px;
+        text-align: center;
+        position: sticky;
+        background: rgb(#ffbe42);
+        padding: 15px ;
+        text-align:center;
+    }
