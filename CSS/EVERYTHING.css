@@ -1,67 +1,17 @@
-<<<<<<< HEAD
-        body {
-            background-color: #fff0f5;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+body {
+    margin: 0;
+    font-family: Arial;
+}
 
-        .container {
-            width: 80%;
-            max-width: 600px;
-            margin: 40px auto;
-            background-color: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
+    .background{
 
-        h1 {
-            text-align: center;
-            color: #92235b;
-        }
-
-        h2 {
-            color: #8b4513;
-            border-bottom: 2px solid #ffd1dc;
-            padding-bottom: 5px;
-        }
-
-        label {
-            display: block;
-            margin-top: 15px;
-            color: #555;
-            font-weight: bold;
-        }
-
-        input, select, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            box-sizing: border-box;
-        }
-
-        textarea {
-            height: 100px;
-        }
-
-        button {
-            width: 100%;
-            margin-top: 20px;
-            padding: 12px;
-            background-color: #ff69b4;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #d63384;
-        }
-=======
-body {}
->>>>>>> 3b3f59087d7327abcf5052dbadc75007bb0cf336
+    }
+    .top-nav {
+        display: flex; 
+        gap: 22px;
+        text-align: center;
+        position: sticky;
+        background: rgb(#ffbe42);
+        padding: 15px ;
+        text-align:center;
+    }
