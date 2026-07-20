@@ -7,6 +7,113 @@
         <img src="#" alt="LJ Logo">
         Ordering Quote | Online Service | LG Bakery SG
     </title>
-
 </head>
+
+<body>
+        <div class="container">
+
+                 <form action="" method="GET">
+
+                <fieldset>
+                        <legend>Order Form</legend>
+                        <label>
+                        Full name:
+                        </label>
+
+                        <input
+                        type="text" placeholder="John Doe" required>  /*hello*/
+
+                        <br>
+                         <label>
+                        Email:
+                        </label>
+
+                        <input
+                        type="text"
+                        placeholder="John_Doe@gmail.com"required>
+
+                        <br>
+
+                        <label>
+                        Phone Number:
+                        </label>
+
+                        <input
+                        type="text" placeholder="12345678" required>  
+
+                        <br>
+
+                        <table border="1">
+                <tr>
+                        <th>Food</th>
+                        <th>Flavor</th>
+                        <th>Quantity</th>
+                        <th>Remarks</th>
+                </tr>
+                <tr>
+                        <td>
+                        <input list="food"required name="food">
+                         <datalist id="food">
+                         <option value="#"></option>
+                         <option value="#"></option>
+                         <option value="#"></option>
+                         <option value="#"></option>
+                         </datalist>
+                        </td>
+                        <td>
+                         <input list="flavor"required name="flavor">
+                         <datalist id="flavor">
+                         <option value="#"></option>
+                         <option value="#"></option>
+                         <option value="#"></option>
+                         <option value="#"></option>
+                        </datalist>
+                        </td>
+                        <td>
+                        <input list="quantity"required name="quantity">
+                        <datalist id="quantity">
+                        <option value="3"></option>
+                        <option value="6"></option>
+                        <option value="9"></option>
+                        <option value="12"></option>
+                        </datalist>
+                        </td>
+                        <td>
+                        <input list="remarks"required name="remarks">
+                        <datalist id="remarks">
+                        <option value="#"></option>
+                        <option value="#"></option>
+                        <option value="#"></option>
+                        <option value="#"></option>
+                        </datalist>
+                        </td>
+                 </tr>
+                        </table>
+
+
+
+
+                <label>date of pickup</label>
+                <input type="date"required name="pickup">
+
+                <br>
+        
+                <label>pickup time</label>
+                <input type="time"required name="time">
+
+                <br>
+
+                         <button type="submit">Submit</button>
+                         <br>
+                           <button type="reset">Clear</button>
+                           <br>
+                </fieldset>
+
+
+                </form>
+
+        </div>
+
+
+</body>
     </html> 
