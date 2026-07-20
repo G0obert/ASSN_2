@@ -3,6 +3,7 @@
     <html lang="en">
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.8">
+    <link rel="Stylesheet" href="CSS/EVERYTHING.css">
     <title>
         <img src="#" alt="LJ Logo">
         Ordering Quote | Online Service | LG Bakery SG
@@ -15,93 +16,156 @@
                  <form action="" method="GET">
 
                 <fieldset>
-                        <legend>Order Form</legend>
+                    <legend>Order Form</legend>
+
                         <label>
                         Full name:
                         </label>
 
-                        <input
-                        type="text" placeholder="John Doe" required>  /*hello*/
+                        <input type="text" placeholder="John Doe" required> <!--Name-->
+                            <br></br>
 
-                        <br>
                          <label>
                         Email:
                         </label>
 
-                        <input
-                        type="text"
-                        placeholder="John_Doe@gmail.com"required>
+                        <input type="text" placeholder="JohnDoe@gmail.com" required> <!--Email-->
+                            <br></br>
 
-                        <br>
 
                         <label>
                         Phone Number:
                         </label>
 
-                        <input
-                        type="text" placeholder="12345678" required>  
+                        <input type="text" placeholder="12345678" required> <!--Phone Number-->
+                            <br></br>
 
-                        <br>
-
-                        <table border="1">
+                        <table> <!--Order Form-->
                 <tr>
-                        <th>Food</th>
+                        <th>Pastery</th>
                         <th>Flavor</th>
                         <th>Quantity</th>
                         <th>Remarks</th>
                 </tr>
                 <tr>
-                        <td>
-                        <input list="food"required name="food">
-                         <datalist id="food">
-                         <option value="#"></option>
-                         <option value="#"></option>
-                         <option value="#"></option>
-                         <option value="#"></option>
+                    <td>
+                        <input list="pastries"required name="pastries">
+                         <datalist id="pastries">
+                         <option value="Cake"></option>
+                         <option value="Cupcake"></option>
+                         <option value="Cream Puff"></option>
+                         <option value="Tart"></option>
                          </datalist>
-                        </td>
-                        <td>
+                    </td>
+                    <td>
                          <input list="flavor"required name="flavor">
                          <datalist id="flavor">
-                         <option value="#"></option>
-                         <option value="#"></option>
-                         <option value="#"></option>
-                         <option value="#"></option>
+                         <option value="Vanilia"></option>
+                         <option value="Chocolate"></option>
+                         <option value="Custard"></option>
+                         <option value="Red Velvet"></option>
                         </datalist>
-                        </td>
-                        <td>
-                        <input list="quantity"required name="quantity">
-                        <datalist id="quantity">
-                        <option value="3"></option>
-                        <option value="6"></option>
-                        <option value="9"></option>
-                        <option value="12"></option>
-                        </datalist>
-                        </td>
-                        <td>
-                        <input list="remarks"required name="remarks">
-                        <datalist id="remarks">
-                        <option value="#"></option>
-                        <option value="#"></option>
-                        <option value="#"></option>
-                        <option value="#"></option>
-                        </datalist>
-                        </td>
+                    </td>
+                    <td>
+                        <input type="number" name="quantity" min="0" max="100" value="1">
+                    </td>
+                    <td>
+                        <input type="remarks"required name="remarks">
+                    </td>
                  </tr>
+                 <tr>
+                    <td>
+                        <input list="pastries"required name="pastries">
+                         <datalist id="pastries">
+                         <option value="Cake"></option>
+                         <option value="Cupcake"></option>
+                         <option value="Cream Puff"></option>
+                         <option value="Tart"></option>
+                         </datalist>
+                    </td>
+                    <td>
+                        <input list="flavor"required name="flavor">
+                         <datalist id="flavor">
+                         <option value="Vanilia"></option>
+                         <option value="Chocolate"></option>
+                         <option value="Custard"></option>
+                         <option value="Red Velvet"></option>
+                        </datalist>
+                    </td>
+                    <td>
+                        <input type="number" name="quantity" min="0" max="100" value="1">
+                    </td>
+                    <td>
+                        <input type="remarks"required name="remarks">
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <input list="pastries"required name="pastries">
+                         <datalist id="pastries">
+                         <option value="Cake"></option>
+                         <option value="Cupcake"></option>
+                         <option value="Cream Puff"></option>
+                         <option value="Tart"></option>
+                         </datalist>
+                    </td>
+                    <td>
+                         <input list="flavor"required name="flavor">
+                         <datalist id="flavor">
+                         <option value="Vanilia"></option>
+                         <option value="Chocolate"></option>
+                         <option value="Custard"></option>
+                         <option value="Red Velvet"></option>
+                        </datalist>
+                    </td>
+                    <td>
+                        <input type="number" name="quantity" min="0" max="100" value="1">
+                    </td>
+                    <td>
+                        <input type="remarks"required name="remarks">
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <input list="pastries"required name="pastries">
+                         <datalist id="pastries">
+                         <option value="Cake"></option>
+                         <option value="Cupcake"></option>
+                         <option value="Cream Puff"></option>
+                         <option value="Tart"></option>
+                         </datalist>
+                    </td>
+                    <td>
+                        <input list="flavor"required name="flavor">
+                        <datalist id="flavor">
+                         <option value="Vanilia"></option>
+                         <option value="Chocolate"></option>
+                         <option value="Custard"></option>
+                         <option value="Red Velvet"></option>
+                    </datalist>
+                    </td>
+
+                    <td>
+                        <input type="number" name="quantity" min="0" max="100" value="1">
+                    </td>
+                    <td>
+                        <input type="remarks"required name="remarks">
+                    </td>
                         </table>
 
 
 
 
-                <label>date of pickup</label>
+                <label>Date of Pickup</label>
                 <input type="date"required name="pickup">
 
-                <br>
+                <br></br>
         
-                <label>pickup time</label>
-                <input type="time"required name="time">
+                <label>Pickup Time</label>
+                <input type="time" name="time">
+                
 
-                <br>
+                <br></br>
 
                          <button type="submit">Submit</button>
                          <br>
