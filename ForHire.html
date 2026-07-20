@@ -10,3 +10,480 @@
     </head>
 
     </html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.8">
+        <title>Hiring</title>
+</head>
+<body>
+    <style>
+
+body {
+    font-family: Arial;
+    margin: 30px;
+}
+
+
+form {
+
+    width: 500px;
+    background-color: #eeeeee;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+
+}
+
+
+input, textarea, select {
+
+    width: 95%;
+    padding: 8px;
+    margin: 8px 0;
+
+}
+
+
+
+button {
+
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background-color: darkblue;
+
+}
+
+
+
+fieldset {
+    border: 2px solid #999;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+}
+
+legend {
+    padding: 0 8px;
+    font-weight: bold;
+}
+
+
+</style>
+
+
+<!-- radio style -->
+<style>
+body {
+    font-family: Arial;
+    margin: 30px;
+}
+
+form {
+    width: 500px;
+    background-color: #eeeeee;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+input, textarea, select {
+    width: 95%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+/* Add this */
+input[type="radio"] {
+    width: auto;
+    padding: 0;
+    margin-right: 8px;
+}
+
+.radio-option {
+    display: block;
+    margin: 8px 0;
+}
+</style>
+<!-- radio style end -->
+
+
+
+
+
+<style>
+h1 {
+    text-align: center;
+}
+</style>
+
+<h1>Employment Application Form</h1>
+
+
+
+<form 
+onsubmit="alert('Form submitted successfully!'); return false;"
+>
+
+
+<fieldset>
+
+<legend>
+Personal Information
+</legend>
+
+
+<label>
+Full Name*
+</label>
+
+
+<input 
+type="text"
+placeholder="e.g. John Smith"
+required
+>
+
+
+<br>
+
+
+<label>
+Physical Address*
+</label>
+
+
+<input
+type="text"
+placeholder="e.g. 180 Ang Mo Kio Avenue 8, Singapore 569830"
+>
+
+
+
+<br>
+
+
+<label>
+Email*
+</label>
+
+
+<input
+type="email"
+placeholder="e.g. examplerobert@gmail.com"
+required
+>
+
+
+
+<br>
+
+
+<label>
+Phone Number*
+</label>
+
+
+<input
+type="tel"
+placeholder="e.g. +65 9876 5432"
+>
+
+
+
+</fieldset>
+
+
+
+
+
+<!-- DATE -->
+
+
+<fieldset>
+
+
+<legend>
+Date Of Birth
+</legend>
+
+
+<input
+type="date"
+>
+
+
+
+</fieldset>
+
+
+
+
+
+
+
+<fieldset>
+
+
+<legend>
+Gender
+</legend>
+
+
+<input
+type="radio"
+name="gender"
+>
+Male
+
+
+<input
+type="radio"
+name="gender"
+>
+Female
+
+
+<input
+type="radio"
+name="gender"
+>
+Other
+<input type="text" name="otherGender" placeholder="Please specify">
+
+</fieldset>
+
+
+
+
+<fieldset>
+
+<legend>
+Nationality
+</legend>
+
+<select>
+
+<option>-- Select Nationality --</option>
+<option>Afghanistan</option>
+<option>Albania</option>
+<option>Algeria</option>
+<option>Argentina</option>
+<option>Australia</option>
+<option>Austria</option>
+<option>Bangladesh</option>
+<option>Belgium</option>
+<option>Brazil</option>
+<option>Brunei</option>
+<option>Cambodia</option>
+<option>Canada</option>
+<option>China</option>
+<option>Denmark</option>
+<option>Egypt</option>
+<option>Finland</option>
+<option>France</option>
+<option>Germany</option>
+<option>Greece</option>
+<option>Hong Kong</option>
+<option>India</option>
+<option>Indonesia</option>
+<option>Ireland</option>
+<option>Italy</option>
+<option>Japan</option>
+<option>South Korea</option>
+<option>Malaysia</option>
+<option>Mexico</option>
+<option>Myanmar</option>
+<option>Nepal</option>
+<option>Netherlands</option>
+<option>New Zealand</option>
+<option>Norway</option>
+<option>Pakistan</option>
+<option>Philippines</option>
+<option>Poland</option>
+<option>Portugal</option>
+<option>Russia</option>
+<option>Saudi Arabia</option>
+<option>Singapore</option>
+<option>South Africa</option>
+<option>Spain</option>
+<option>Sri Lanka</option>
+<option>Sweden</option>
+<option>Switzerland</option>
+<option>Taiwan</option>
+<option>Thailand</option>
+<option>Turkey</option>
+<option>Ukraine</option>
+<option>United Arab Emirates</option>
+<option>United Kingdom</option>
+<option>United States</option>
+<option>Vietnam</option>
+
+</select>
+
+
+
+
+</fieldset>
+
+
+
+
+
+
+<fieldset>
+
+
+<legend>
+Residency Status
+</legend>
+
+
+<input 
+type="text"
+placeholder="e.g. Singapore Citizen, Permanent Resident, Work Permit Holder">
+
+</fieldset>
+
+<fieldset>
+
+<legend>
+    Employment Details 
+</legend>
+
+
+<p><strong>Full-time or Part-time? *</strong></p>
+
+<label>
+    <input type="radio" name="employment" value="full-time">
+    Full-time
+</label>
+
+<br>
+
+<label>
+    <input type="radio" name="employment" value="part-time">
+    Part-time
+</label>
+
+<br><br>
+
+<label>
+    Lengh of commitment. and when you can start? *
+</label>
+
+<input
+type="text"
+placeholder="e.g. 6 months, 1 year, 2 years, etc." >
+
+
+</fieldset>
+
+
+
+
+
+
+
+<fieldset>
+
+
+<legend>
+About Yourself
+</legend>
+
+
+
+<textarea
+rows="5"
+placeholder="Tell us about yourself and why you would like to work with us..."
+></textarea>
+
+
+
+</fieldset>
+
+
+
+
+
+
+<fieldset>
+
+
+<legend>
+Upload Resume/CV
+</legend>
+
+
+
+<input
+type="file" accept="image/*"
+>
+
+
+
+</fieldset>
+
+
+
+
+
+
+
+
+
+<fieldset>
+
+
+<legend>
+Anything else you would like us to know?
+</legend>
+
+
+<input
+type="search"
+>
+
+
+</fieldset>
+
+
+
+
+
+
+
+<
+
+
+<button type="submit">
+
+Submit
+
+</button>
+
+
+
+<button type="reset">
+
+Reset
+
+</button>
+
+
+
+</form>
+
+        
+</body>
+</html>
