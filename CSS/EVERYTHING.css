@@ -15,12 +15,18 @@ body {
         padding: 15px ;
         text-align:center;
     }
-
+    
+    .Tlogo {
+        height: 70px;
+        width: auto;
+    }
+    
     .top-nav a{
     color: #99870f;
     text-decoration: none;
         /*Links button*/
     }
+    
     .top-nav a:hover {
     color: #6d5208;
         /*color change hovering*/
@@ -34,10 +40,22 @@ body {
         padding: 50px;
         border-radius: 12px;
         box-shadow: 0 5px 15px #818181;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
     }
     
-    .guh {
-        display: inline-flex;
+    .HPhoto {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 7px;
+    }
+
+    .Reason {
+        text-align: center;
     }
 
 
