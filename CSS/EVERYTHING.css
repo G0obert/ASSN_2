@@ -4,7 +4,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+    /*Navigation Bar*/
     .top-nav {
         display: flex; 
         justify-content: center;
@@ -15,23 +15,23 @@ body {
         padding: 15px ;
         text-align:center;
     }
-    
+    /*Navigation Logo*/
     .Tlogo {
         height: 70px;
         width: auto;
     }
-    
+    /*Links Button*/
     .top-nav a{
     color: #99870f;
     text-decoration: none;
-        /*Links button*/
+        
     }
-    
+    /*color change hovering*/
     .top-nav a:hover {
     color: #6d5208;
-        /*color change hovering*/
+        
     }
-
+    /*For basic container unless special id*/
     .container {
         width: 80%;
         max-width: 840px;
@@ -46,7 +46,27 @@ body {
         justify-content: space-between;
         gap: 40px;
     }
-    
+
+    /*Navigation Gallery*/
+    .overlay {
+        
+    }
+    /*Ordering Quote*/
+    .container1 {
+        width: 80%;
+        max-width: 840px;
+        margin: 40px auto;
+        background-color: white;
+        padding: 50px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px #818181;
+
+        display: flexbox;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    /*Homepage motto picture*/
     .HPhoto {
         width: 300px;
         height: 300px;
