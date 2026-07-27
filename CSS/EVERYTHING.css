@@ -1,67 +1,66 @@
-<<<<<<< HEAD
-        body {
-            background-color: #fff0f5;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+body {
+    background-color: #ffffff; /*testing only*/
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-        .container {
-            width: 80%;
-            max-width: 600px;
-            margin: 40px auto;
-            background-color: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
+    .top-nav {
+        display: flex; 
+        justify-content: center;
+        gap: 22px;
+        text-align: center;
+        position: sticky;
+        background: #fbde48;
+        padding: 15px ;
+        text-align:center;
+    }
+    
+    .Tlogo {
+        height: 70px;
+        width: auto;
+    }
+    
+    .top-nav a{
+    color: #99870f;
+    text-decoration: none;
+        /*Links button*/
+    }
+    
+    .top-nav a:hover {
+    color: #6d5208;
+        /*color change hovering*/
+    }
 
-        h1 {
-            text-align: center;
-            color: #92235b;
-        }
+    .container {
+        width: 80%;
+        max-width: 840px;
+        margin: 40px auto;
+        background-color: white;
+        padding: 50px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px #818181;
 
-        h2 {
-            color: #8b4513;
-            border-bottom: 2px solid #ffd1dc;
-            padding-bottom: 5px;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    
+    .HPhoto {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 7px;
+    }
 
-        label {
-            display: block;
-            margin-top: 15px;
-            color: #555;
-            font-weight: bold;
-        }
+    .Reason {
+        text-align: center;
+    }
 
-        input, select, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            box-sizing: border-box;
-        }
 
-        textarea {
-            height: 100px;
-        }
 
-        button {
-            width: 100%;
-            margin-top: 20px;
-            padding: 12px;
-            background-color: #ff69b4;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            font-size: 18px;
-            cursor: pointer;
-        }
+    
 
-        button:hover {
-            background-color: #d63384;
-        }
-=======
-body {}
->>>>>>> 3b3f59087d7327abcf5052dbadc75007bb0cf336
+    
+
