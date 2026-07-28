@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Complete HTML Form Playground</title>
+
+
+<style>
+
+body {
+    font-family: Arial;
+    margin: 30px;
+}
+
+
+form {
+
+    width: 500px;
+    background-color: #eeeeee;
+    padding: 20px;
+    border-radius: 15px;
+
+}
+
+
+input, textarea, select {
+
+    width: 95%;
+    padding: 8px;
+    margin: 8px 0;
+
+}
+
+
+
+button {
+
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background-color: darkblue;
+
+}
+
+
+
+fieldset {
+
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+}
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<h1>User Registration Form</h1>
+
+
+
+<form 
+onsubmit="alert('Form submitted successfully!'); return false;"
+>
+
+
+
+<!-- BASIC TEXT -->
+
+
+<fieldset>
+
+<legend>
+Personal Information
+</legend>
+
+
+<label>
+Full Name:
+</label>
+
+
+<input 
+type="text"
+placeholder="Example: John Smith"
+required
+>
+
+
+<br>
+
+
+<label>
+Username:
+</label>
+
+
+<input
+type="text"
+placeholder="Choose a username"
+>
+
+
+
+<br>
+
+
+<label>
+Email:
+</label>
+
+
+<input
+type="email"
+placeholder="example@gmail.com"
+required
+>
+
+
+
+<br>
+
+
+<label>
+Password:
+</label>
+
+
+<input
+type="password"
+placeholder="Enter password"
+>
+
+
+
+</fieldset>
+
+
+
+
+
+
+
+<!-- NUMBER -->
+
+
+<fieldset>
+
+
+<legend>
+Age Information
+</legend>
+
+
+<label>
+Age:
+</label>
+
+
+<input
+type="number"
+min="1"
+max="100"
+placeholder="18"
+>
+
+
+
+</fieldset>
+
+
+
+
+
+
+
+<!-- DATE -->
+
+
+<fieldset>
+
+
+<legend>
+Birthday
+</legend>
+
+
+<input
+type="date"
+>
+
+
+
+</fieldset>
+
+
+
+
+
+
+
+
+<!-- RADIO BUTTON -->
+
+
+<fieldset>
+
+
+<legend>
+Gender
+</legend>
+
+
+<input
+type="radio"
+name="gender"
+>
+Male
+
+
+<input
+type="radio"
+name="gender"
+>
+Female
+
+
+<input
+type="radio"
+name="gender"
+>
+Other
+
+
+
+</fieldset>
+
+
+
+
+
+
+
+
+<!-- CHECKBOX -->
+
+
+<fieldset>
+
+
+<legend>
+Hobbies
+</legend>
+
+
+
+<input type="checkbox">
+Gaming
+
+
+<input type="checkbox">
+Sports
+
+
+<input type="checkbox">
+Music
+
+
+<input type="checkbox">
+Reading
+
+
+
+</fieldset>
+
+
+
+
+
+
+
+
+
+<!-- DROPDOWN -->
+
+
+<fieldset>
+
+
+<legend>
+Country
+</legend>
+
+
+<select>
+
+
+<option>
+Singapore
+</option>
+
+
+<option>
+Malaysia
+</option>
+
+
+<option>
+Japan
+</option>
+
+
+<option>
+USA
+</option>
+
+
+</select>
+
+
+
+</fieldset>
+
+
+
+
+
+
+
+
+<!-- AUTOCOMPLETE -->
+
+
+<fieldset>
+
+
+<legend>
+Favourite Browser
+</legend>
+
+
+
+<input 
+list="browsers"
+placeholder="Start typing..."
+>
+
+
+
+<datalist id="browsers">
+
+
+<option value="Chrome">
+
+
+<option value="Firefox">
+
+
+<option value="Safari">
+
+
+<option value="Edge">
+
+
+<option value="Opera">
+
+
+</datalist>
+
+
+</fieldset>
+
+
+
+
+
+
+
+
+
+<!-- TEXT AREA -->
+
+
+<fieldset>
+
+
+<legend>
+About Yourself
+</legend>
+
+
+
+<textarea
+rows="5"
+placeholder="Tell us about yourself..."
+></textarea>
+
+
+
+</fieldset>
+
+
+
+
+
+
+
+
+
+<!-- FILE UPLOAD -->
+
+
+<fieldset>
+
+
+<legend>
+Upload Profile Picture
+</legend>
+
+
+
+<input
+type="file"
+>
+
+
+
+</fieldset>
+
+
+
+
+
+
+
+
+<!-- RANGE -->
+
+
+<fieldset>
+
+
+<legend>
+Skill Level
+</legend>
+
+
+
+<input
+type="range"
+min="0"
+max="100"
+>
+
+
+
+</fieldset>
+
+
+
+
+
+
+
+
+<!-- COLOR -->
+
+
+<fieldset>
+
+
+<legend>
+Favourite Colour
+</legend>
+
+
+<input
+type="color"
+>
+
+
+</fieldset>
+
+
+
+
+
+
+
+
+<!-- SEARCH -->
+
+
+<fieldset>
+
+
+<legend>
+Search
+</legend>
+
+
+<input
+type="search"
+placeholder="Search something..."
+>
+
+
+</fieldset>
+
+
+
+
+
+
+
+<!-- BUTTONS -->
+
+
+<button type="submit">
+
+Submit
+
+</button>
+
+
+
+<button type="reset">
+
+Reset
+
+</button>
+
+
+
+</form>
+
+
+
+
+
+</body>
+
+</html>
