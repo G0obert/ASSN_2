@@ -21,13 +21,13 @@ body {
         width: auto;
     }
     
-    .top-nav a{
+    .topnav a{
     color: #99870f;
     text-decoration: none;
         /*Links button*/
     }
     
-    .top-nav a:hover {
+    .topnav a:hover {
     color: #6d5208;
         /*color change hovering*/
     }
