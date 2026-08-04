@@ -24,9 +24,7 @@
 
 
 
-<form 
-onsubmit="alert('Form submitted successfully!'); return false;"
->
+<form action="ThankYou.html" method="get">
 
 
 <fieldset>
@@ -42,7 +40,8 @@ Full Name*
 
 
 <input 
-type="text"
+type="text"  
+name="fullName"
 placeholder="e.g. John Smith"
 required
 >
@@ -57,7 +56,8 @@ Physical Address*
 
 
 <input
-type="text"
+type="text"   
+name="address"
 placeholder="e.g. 180 Ang Mo Kio Avenue 8, Singapore 569830"
 >
 
@@ -73,6 +73,7 @@ Email*
 
 <input
 type="email"
+name="email"
 placeholder="e.g. examplerobert@gmail.com"
 required
 >
@@ -89,6 +90,7 @@ Phone Number*
 
 <input
 type="tel"
+name="tel"
 placeholder="e.g. +65 9876 5432"
 >
 
@@ -108,6 +110,7 @@ Date Of Birth
 
 <input
 type="date"
+name="dob"
 >
 
 
@@ -202,6 +205,7 @@ Nationality
 
 <input
 type="text"
+name="commitment"
 placeholder="e.g. 6 months, 1 year, 2 years, etc." >
 
 
@@ -223,6 +227,8 @@ About Yourself
 
 
 <textarea
+name="about Yourself"
+
 rows="5"
 placeholder="Tell us about yourself and why you would like to work with us..."
 ></textarea>
