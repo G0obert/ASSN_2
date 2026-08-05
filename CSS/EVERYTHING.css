@@ -17,8 +17,8 @@ body {
     }
     
     .Tlogo {
-        height: 70px;
-        width: auto;
+        height: auto;
+        width: 70px;
     }
     
     .topnav a{
@@ -45,6 +45,17 @@ body {
         align-items: center;
         justify-content: space-between;
     }
+
+
+    .contactcontainer {
+    width: 80%;
+    max-width: 840px;
+    margin: 40px auto;
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #818181;
+   }
     
     .HPhoto {
         width: 300px;
@@ -57,6 +68,9 @@ body {
         text-align: center;
     }
 
+    .center {
+    text-align: center;
+    }
 
     
 

@@ -1,23 +1,30 @@
-<DOCTYPE! HTML>
+<!DOCTYPE html>
     <head>
     <html lang="en">
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.8">
+    <link rel="Stylesheet" href="CSS/EVERYTHING.css">
+    <link rel="icon" type="image/png" href="images/Logo/Logo.png">
      <title>
-        <img src="images/Logo/Logo.png" alt="LJ Logo">
         Careers | Online Service | LG Bakery SG
      </title>
     </head>
 
 <body>
     
+      <nav class="top-nav">
+        <div class="Logo"> <img src="images/Logo/LogoTransparent.png" class="Tlogo" alt="LogoTransparent"> </div>
+            <h2><a href="Homepage.html">Home</a></h2>
+            <h2><a href="Visions.html">Our Vision</a></h2>
+            <h2><a href="Products.html">Menu</a></h2>
+            <h2><a href="ForHire.html">Careers</a></h2>
+            <h2><a href="ContactUs.html">Contact Us</a></h2>
+     </nav>
 <h1>Employment Application Form</h1>
 
 
 
-<form 
-onsubmit="alert('Form submitted successfully!'); return false;"
->
+<form action="ThankYou.html" method="get">
 
 
 <fieldset>
@@ -33,7 +40,8 @@ Full Name*
 
 
 <input 
-type="text"
+type="text"  
+name="fullName"
 placeholder="e.g. John Smith"
 required
 >
@@ -48,7 +56,8 @@ Physical Address*
 
 
 <input
-type="text"
+type="text"   
+name="address"
 placeholder="e.g. 180 Ang Mo Kio Avenue 8, Singapore 569830"
 >
 
@@ -64,6 +73,7 @@ Email*
 
 <input
 type="email"
+name="email"
 placeholder="e.g. examplerobert@gmail.com"
 required
 >
@@ -80,6 +90,7 @@ Phone Number*
 
 <input
 type="tel"
+name="tel"
 placeholder="e.g. +65 9876 5432"
 >
 
@@ -99,6 +110,7 @@ Date Of Birth
 
 <input
 type="date"
+name="dob"
 >
 
 
@@ -193,6 +205,7 @@ Nationality
 
 <input
 type="text"
+name="commitment"
 placeholder="e.g. 6 months, 1 year, 2 years, etc." >
 
 
@@ -214,6 +227,8 @@ About Yourself
 
 
 <textarea
+name="about Yourself"
+
 rows="5"
 placeholder="Tell us about yourself and why you would like to work with us..."
 ></textarea>
