@@ -1,385 +1,179 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Complete HTML Table Playground</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Footer Example</title>
 
-    <style>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-        table {
-            border-collapse: collapse;
-            width: 80%;
-            margin: 20px;
-        }
+body{
+    background:#f2f2f2;
+}
 
-        th, td {
-            border: 2px solid black;
-            padding: 10px;
-            text-align: center;
-        }
+/* Footer */
+footer{
+    background:#48191d;
+    color:white;
+    padding:60px 80px;
+}
 
-        th {
-            background-color: lightblue;
-        }
+.footer-container{
+    max-width:1400px;
+    margin:auto;
 
-        caption {
-            font-size: 25px;
-            font-weight: bold;
-            margin: 10px;
-        }
+    display:grid;
+    grid-template-columns:220px 1fr 1fr 1.5fr 1fr;
+    gap:60px;
+}
 
-        tfoot {
-            background-color: lightgray;
-        }
+/* Logo Section */
 
-    </style>
+.logo img{
+    width:90px;
+    display:block;
+    margin-bottom:20px;
+}
+
+.logo h2{
+    color:#d8a253;
+    font-family:Georgia, serif;
+    font-weight:normal;
+    margin-bottom:35px;
+}
+
+.social-icons{
+    display:flex;
+    gap:20px;
+}
+
+.social-icons a{
+    text-decoration:none;
+    color:white;
+    font-size:22px;
+}
+
+/* Footer Columns */
+
+.column h3{
+    margin-bottom:25px;
+    font-size:24px;
+}
+
+.column a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin-bottom:18px;
+    transition:.3s;
+}
+
+.column a:hover{
+    color:#d8a253;
+    padding-left:5px;
+}
+
+.column p{
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.footer-container{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.social-icons{
+    justify-content:center;
+}
+
+.logo{
+    margin:auto;
+}
+
+}
+</style>
 
 </head>
 
-
 <body>
 
+<footer>
 
-<h1>Complete Table Example</h1>
+<div class="footer-container">
 
+    <!-- Logo -->
+    <div class="logo">
+        <img src="https://via.placeholder.com/90x90" alt="Logo">
 
-<table>
+        <h2>Swee Heng</h2>
 
+        <div class="social-icons">
+            <a href="#">📘</a>
+            <a href="#">📷</a>
+            <a href="#">▶️</a>
+        </div>
+    </div>
 
-    <!-- TABLE TITLE -->
+    <!-- Sitemap -->
+    <div class="column">
+        <h3>Sitemap</h3>
 
-    <caption>
-        Student Performance Report
-    </caption>
+        <a href="#">Brand Story</a>
+        <a href="#">News & Events</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact Us</a>
+        <a href="#">User Sitemap</a>
+    </div>
 
+    <!-- Menu -->
+    <div class="column">
+        <h3>Menu</h3>
 
+        <a href="#">Birthday Cake</a>
+        <a href="#">Cartoon Cake</a>
+        <a href="#">Regular Cakes</a>
+        <a href="#">Theme Cakes</a>
+        <a href="#">Character Cakes</a>
+        <a href="#">Accessories</a>
+    </div>
 
-    <!-- TABLE HEADER -->
+    <!-- Contact -->
+    <div class="column">
+        <h3>Contact Information</h3>
 
-    <thead>
+        <p>📍 Swee Heng Bakery Pte. Ltd.</p>
+        <p>16, Senoko Ave,<br>Singapore 758306</p>
 
-        <tr>
+        <br>
 
-            <th rowspan="2">
-                Student
-            </th>
+        <p>📞 +65 6755 0300</p>
+    </div>
 
-            <th colspan="3">
-                Subjects
-            </th>
+    <!-- Useful Links -->
+    <div class="column">
+        <h3>Useful Links</h3>
 
-            <th rowspan="2">
-                Total
-            </th>
+        <a href="#">Swee Heng Corporate ↗</a>
+        <a href="#">Swee Heng 1989 Classic ↗</a>
+    </div>
 
-        </tr>
+</div>
 
+</footer>
 
-        <tr>
-
-            <th>
-                Math
-            </th>
-
-            <th>
-                Science
-            </th>
-
-            <th>
-                English
-            </th>
-
-        </tr>
-
-
-    </thead>
-
-
-
-
-
-    <!-- TABLE BODY -->
-
-    <tbody>
-
-
-        <tr>
-
-            <td>
-                John
-            </td>
-
-            <td>
-                90
-            </td>
-
-            <td>
-                85
-            </td>
-
-            <td>
-                88
-            </td>
-
-            <td>
-                263
-            </td>
-
-        </tr>
-
-
-
-
-        <tr>
-
-            <td>
-                Amy
-            </td>
-
-            <td>
-                95
-            </td>
-
-            <td>
-                92
-            </td>
-
-            <td>
-                90
-            </td>
-
-            <td>
-                277
-            </td>
-
-        </tr>
-
-
-
-
-        <tr>
-
-            <td>
-                Bob
-            </td>
-
-            <td>
-                80
-            </td>
-
-            <td>
-                75
-            </td>
-
-            <td>
-                85
-            </td>
-
-            <td>
-                240
-            </td>
-
-        </tr>
-
-
-    </tbody>
-
-
-
-
-
-    <!-- TABLE FOOTER -->
-
-    <tfoot>
-
-
-        <tr>
-
-            <td colspan="4">
-                Class Average
-            </td>
-
-
-            <td>
-                260
-            </td>
-
-
-        </tr>
-
-
-    </tfoot>
-
-
-
-</table>
-
-
-
-
-
-
-<h2>Rowspan Example</h2>
-
-
-<table>
-
-
-<tr>
-
-    <th>
-        Day
-    </th>
-
-    <th>
-        Activity
-    </th>
-
-</tr>
-
-
-
-<tr>
-
-    <td rowspan="2">
-        Monday
-    </td>
-
-
-    <td>
-        Mathematics
-    </td>
-
-
-</tr>
-
-
-
-<tr>
-
-    <td>
-        Computer Science
-    </td>
-
-
-</tr>
-
-
-</table>
-
-
-
-
-
-
-
-<h2>Colspan Example</h2>
-
-
-<table>
-
-
-<tr>
-
-    <th colspan="3">
-        Monthly Sales
-    </th>
-
-</tr>
-
-
-
-<tr>
-
-    <td>
-        January
-    </td>
-
-
-    <td>
-        February
-    </td>
-
-
-    <td>
-        March
-    </td>
-
-
-</tr>
-
-
-
-<tr>
-
-    <td>
-        $100
-    </td>
-
-
-    <td>
-        $200
-    </td>
-
-
-    <td>
-        $300
-    </td>
-
-
-</tr>
-
-
-</table>
-
-
-
-
-
-
-
-<h2>Nested Table Example</h2>
-
-
-<table>
-
-
-<tr>
-
-<td>
-
-
-    Outer Table
-
-
-    <table>
-
-
-        <tr>
-
-            <td>
-                Inner Table
-            </td>
-
-
-            <td>
-                Inside Cell
-            </td>
-
-
-        </tr>
-
-
-    </table>
-
-
-</td>
-
-
-</tr>
-
-
-</table>
+</body>
+</html>
 
 
 
