@@ -19,7 +19,7 @@
             <h2><a href="Visions.html">Our Vision</a></h2>
             <h2><a href="Products.html">Menu</a></h2>
             <h2><a href="ForHire.html">Careers</a></h2>
-            <h2><a href="mailto:261324E@Mymail.nyp.edu.sg?subject=LJ Bakery | Concerns">Contact Us</a></h2>
+            <h2><a href="ContactUs.html">Contact Us</a></h2>
      </nav>
     
 <h1>Employment Application Form</h1>
@@ -29,39 +29,21 @@ onsubmit="alert('Form submitted successfully!'); return false;"
 >
 
 
-<fieldset>
+
 
 <legend>
 Personal Information
 </legend>
-
-
 <label>
 Full Name*
 </label>
-
-
-<input 
-type="text"
-placeholder="e.g. John Smith"
-required
->
+<input type="text" placeholder="e.g. John Doe" required>
 
 
 <br>
 
-
-<label>
-Physical Address*
-</label>
-
-
-<input
-type="text"
-placeholder="e.g. 180 Ang Mo Kio Avenue 8, Singapore 569830"
->
-
-
+<label>Physical Address*</label>
+<input type="text"placeholder="e.g. 180 Ang Mo Kio Avenue 8, Singapore 569830">
 
 <br>
 
@@ -94,25 +76,16 @@ placeholder="e.g. +65 9876 5432"
 
 
 
-</fieldset>
 
+<div class="form-section">
 
+    <h3>Date Of Birth</h3>
 
-<fieldset>
+    <input
+     type="date"
+    >
 
-
-<legend>
-Date Of Birth
-</legend>
-
-
-<input
-type="date"
->
-
-
-
-</fieldset>
+</div>
 
 
 
@@ -120,12 +93,9 @@ type="date"
 
 
 
-<fieldset>
+<div class="form-section">
 
-
-<legend>
-Gender
-</legend>
+    <h3>Gender</h3>
 
 
 <input
@@ -154,58 +124,48 @@ Other
 
 
 
-<fieldset>
+<div class="form-section">
 
-<legend>
-Nationality
-</legend>
+    <h3>Nationality</h3>
 
-<select>
+    <select>
+        <option>-- Select Nationality --</option>
+        <option>Singapore</option>
+        <option>PR</option>
+        <option>Others</option>
+    </select>
 
-<option>-- Select Nationality --</option>
-<option>Singapore</option>
-<option>PR</option>
-<option>Others</option>
+</div>
 
-</select>
+<div class="form-section">
 
+    <h3>Employment Details</h3>
 
+    <p><strong>Full-time or Part-time? *</strong></p>
 
-</fieldset>
+    <label>
+        <input type="radio" name="employment" value="full-time">
+        Full-time
+    </label>
 
-<fieldset>
+    <br>
 
-<legend>
-    Employment Details 
-</legend>
+    <label>
+        <input type="radio" name="employment" value="part-time">
+        Part-time
+    </label>
 
+    <br><br>
 
-<p><strong>Full-time or Part-time? *</strong></p>
+    <label>
+        Length of commitment and when you can start? *
+    </label>
 
-<label>
-    <input type="radio" name="employment" value="full-time">
-    Full-time
-</label>
+    <input
+     type="text"
+     placeholder="e.g. 6 months, 1 year, 2 years, etc." >
 
-<br>
-
-<label>
-    <input type="radio" name="employment" value="part-time">
-    Part-time
-</label>
-
-<br><br>
-
-<label>
-    Lengh of commitment. and when you can start? *
-</label>
-
-<input
-type="text"
-placeholder="e.g. 6 months, 1 year, 2 years, etc." >
-
-
-</fieldset>
+</div>
 
 
 
