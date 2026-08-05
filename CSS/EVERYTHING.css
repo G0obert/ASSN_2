@@ -24,16 +24,30 @@ body {
     .topnav a{
     color: #99870f;
     text-decoration: none;
-        /*Links button*/
     }
     
     .topnav a:hover {
     color: #6d5208;
     transition: ease-in 0.3;
-        /*color change hovering*/
     }
 
     .container {
+        width: 80%;
+        max-width: 840px;
+        margin: 40px auto;
+        background-color: white;
+        padding: 50px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px #818181;
+
+        text-align: center;
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 24px;
+    }
+
+    .container1 {
         width: 80%;
         max-width: 840px;
         margin: 40px auto;
@@ -49,7 +63,141 @@ body {
         gap: 24px;
     }
 
-    
+    .container1 h1 {
+        margin: 0;
+        font-size: clamp(2rem, 2.5vw, 2.6rem);
+        color: #3c2a14;
+        text-align: center;
+    }
+
+   /*BUTTTON*/
+    .btn {
+        display: inline-block;
+        padding: 12px 22px;
+        border-radius: 8px;
+        border: 1px solid rgba(0,0,0,0.07);
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #000; /* idle: black text */
+        background-color: #fbde48; /* idle: light honey */
+        transition: transform 0.12s ease, background-color 0.12s ease, color 0.12s ease;
+        text-decoration: none;
+    }
+
+    .btn:hover {
+        transform: translateY(-2px);
+        background-color: #f0c116; /* slightly darker honey */
+        color: #fff; /* hover: white text */
+    }
+
+    .btn:active,
+    .btn:focus {
+        transform: translateY(0);
+        background-color: #b57c1a; /* clicked: darker honey */
+        color: #fff; /* clicked: white text */
+        outline: none;
+    }
+
+    .btn:focus-visible {
+        box-shadow: 0 0 0 4px rgba(245, 199, 77, 0.25);
+    }
+
+    form fieldset {
+        border: 1px solid #ddd;
+        border-radius: 14px;
+        padding: 24px;
+        background: #fbfbfb;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    form legend {
+        font-weight: 700;
+        color: #5a452a;
+        padding: 0 8px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #3d3d3d;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 100%;
+        max-width: 100%;
+        padding: 14px 16px;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        background-color: #fff;
+        font-size: 1rem;
+        box-sizing: border-box;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+        outline: 3px solid rgba(251, 222, 72, 0.45);
+        border-color: #f0c116;
+    }
+
+    .radio-group {
+        gap: 12px;
+    }
+
+    .radio-group label,
+    .radio-group input {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-right: 16px;
+    }
+
+    .help-text {
+        margin: 0;
+        color: #6b6b6b;
+        font-size: 0.95rem;
+    }
+
+    .form-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        margin-top: 8px;
+    }
+
+    .form-actions button {
+        min-width: 160px;
+        padding: 14px 24px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 700;
+        color: white;
+        background-color: #b57c1a;
+        transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .form-actions button:hover {
+        transform: translateY(-1px);
+        background-color: #8f6112;
+    }
+
+    .form-actions button.secondary {
+        background-color: #888;
+    }
+
+    .form-actions button.secondary:hover {
+        background-color: #666;
+    }
+
     .HPhoto {
         width: 300px;
         height: 300px;
@@ -288,4 +436,59 @@ body {
         font-weight: 700;
         letter-spacing: 0.02em;
         text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+    }
+
+    .storyimage {
+        width: 100%;
+        height: 40vh;
+        max-height: 420px;
+        min-height: 220px;
+        object-fit: cover;
+        object-position: center top;
+        display: block;
+    }
+
+    .CRights {
+        text-align: center;
+        margin: 20px 0;
+        color: #555;
+        font-size: 0.9rem;
+    }
+
+    /* Responsive navigation layout for Homepage overlay-gallery
+       - Large screens: 4 columns (default grid)
+       - Medium screens (601px–900px): 2 columns (2x2)
+       - Small screens (<=600px): vertical stack (1 by 4)
+    */
+    .overlay-gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    @media (max-width: 900px) and (min-width: 601px) {
+        .overlay-gallery {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .gallery-item img {
+            height: 220px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .overlay-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .gallery-item {
+            width: 100%;
+        }
+        .gallery-item img {
+            height: 200px;
+            object-position: center;
+        }
+        .container {
+            padding: 24px;
+        }
     }

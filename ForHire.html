@@ -22,247 +22,117 @@
             <h2><a href="ContactUs.html">Contact Us</a></h2>
      </nav>
     
-<h1>Employment Application Form</h1>
+<form action="ThankYou2.html" method="GET">
+    <fieldset class="container1">
+        <legend><h1>Employment Application Form</h1></legend>
+        <h2>Personal Information</h2>
+        <label for="fullName">Full Name*</label>
+        <input type="text" id="fullName" placeholder="e.g. John Doe" required>
+        <label for="email">Email*</label>
+        <input type="email" id="email" placeholder="e.g. example@gmail.com" required>
+        <label for="phone">Phone Number*</label>
+        <input type="tel" id="phone" placeholder="e.g. 12345678" required>
+        <label for="dob">Date of Birth*</label>
+        <input type="date" id="dob" required>
 
-<form 
-onsubmit="alert('Form submitted successfully!'); return false;"
->
+        <label for="Nationality">Nationality*</label>
+        <select id="Nationality" required>
+            <option value="">Select Nationality</option>
+            <option value="Singaporean">Singaporean</option>
+            <option value="Permanent Resident">Permanent Resident</option>
+        </select>
+        <label for="NRIC">NRIC/FIN Number*</label>
+        <input type="text" id="NRIC" placeholder="e.g. S1234567A" required>
+        <label for="address">Address*</label>
+        <input type="text" id="address" placeholder="e.g. 180 Ang Mo Kio Ave 8, Singapore 560180" required>
+        
 
+        <h2>Education Background</h2>
+        <table>
+            <tr>
+                <th>Level of Education</th>
+                <th>School/Institution</th>
+                <th>Year of Graduation</th>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="e.g. High School, Diploma, Degree" required></td>
+                <td><input type="text" placeholder="e.g. Nanyang Polytechnic" required></td>
+                <td><input type="text" placeholder="e.g. 2020" required></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="e.g. High School, Diploma, Degree" required></td>
+                <td><input type="text" placeholder="e.g. Nanyang Polytechnic" required></td>
+                <td><input type="text" placeholder="e.g. 2020" required></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="e.g. High School, Diploma, Degree" required></td>
+                <td><input type="text" placeholder="e.g. Nanyang Polytechnic" required></td>
+                <td><input type="text" placeholder="e.g. 2020" required></td>
+            </tr>
+            
+        </table>
+        <h2>Previous Exmployment</h2>
+        <table>
+            <tr>
+                <th>Company Name</th>
+                <th>Position Held</th>
+                <th>Duration of Employment</th>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="e.g. ABC Bakery" required></td>
+                <td><input type="text" placeholder="e.g. Baker" required></td>
+                <td><input type="text" placeholder="e.g. Jan 2020 - Dec 2021" required></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="e.g. ABC Bakery" required></td>
+                <td><input type="text" placeholder="e.g. Baker" required></td>
+                <td><input type="text" placeholder="e.g. Jan 2020 - Dec 2021" required></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="e.g. ABC Bakery" required></td>
+                <td><input type="text" placeholder="e.g. Baker" required></td>
+                <td><input type="text" placeholder="e.g. Jan 2020 - Dec 2021" required></td>
+            </tr>
+        </table>
 
+        <h2>Employment Information</h2>
 
+        <label for="ET">Employment Type*</label>
+        <select id="ET" required>
+            <option value="">Select Employment Type</option>
+            <option value="full-time">Full-Time</option>
+            <option value="part-time">Part-Time</option>
+            <option value="internship">Internship</option>
+        </select>
 
-<legend>
-Personal Information
-</legend>
-<label>
-Full Name*
-</label>
-<input type="text" placeholder="e.g. John Doe" required>
-
-
-<br>
-
-<label>Physical Address*</label>
-<input type="text"placeholder="e.g. 180 Ang Mo Kio Avenue 8, Singapore 569830">
-
-<br>
-
-
-<label>
-Email*
-</label>
-
-
-<input
-type="email"
-placeholder="e.g. examplerobert@gmail.com"
-required
->
-
-
-
-<br>
-
-
-<label>
-Phone Number*
-</label>
-
-
-<input
-type="tel"
-placeholder="e.g. +65 9876 5432"
->
-
-
-
-
-<div class="form-section">
-
-    <h3>Date Of Birth</h3>
-
-    <input
-     type="date"
-    >
-
-</div>
-
-
-
-
-
-
-
-<div class="form-section">
-
-    <h3>Gender</h3>
-
-
-<input
-type="radio"
-name="gender"
->
-Male
-
-
-<input
-type="radio"
-name="gender"
->
-Female
-
-
-<input
-type="radio"
-name="gender"
->
-Other
-<input type="text" name="otherGender" placeholder="Please specify">
-
-</fieldset>
+        <label for="startDate">Available Start Date*</label>
+        <input type="date" id="startDate" required>
+        
+        <label for="Length of Commitment">Length of Commitment*</label>
+        <input type="text" id="Length of Commitment" placeholder="e.g. 6 months, 1 year, 2 years" required>
 
 
+        <label for="position">Position Applied For*</label> 
+        <select id="position" required>
+            <option value="">Select a position</option>
+            <option value="baker">Baker</option>
+            <option value="cashier">Cashier</option>
+            <option value="delivery">Delivery Personnel</option>
+            <option value="manager">Manager</option>
+            <option value="customer-service">Customer Service</option>
+        </select>
 
+        <label for="resume">Upload Resume/CVV*</label>
+        <input type="file" id="resume" accept=".pdf,.doc,.docx" required>  
 
-<div class="form-section">
-
-    <h3>Nationality</h3>
-
-    <select>
-        <option>-- Select Nationality --</option>
-        <option>Singapore</option>
-        <option>PR</option>
-        <option>Others</option>
-    </select>
+        <button type="submit" class="btn">Submit Application</button>   
+        <button type="reset" class="btn">Reset Form</button>   
 
 </div>
-
-<div class="form-section">
-
-    <h3>Employment Details</h3>
-
-    <p><strong>Full-time or Part-time? *</strong></p>
-
-    <label>
-        <input type="radio" name="employment" value="full-time">
-        Full-time
-    </label>
-
-    <br>
-
-    <label>
-        <input type="radio" name="employment" value="part-time">
-        Part-time
-    </label>
-
-    <br><br>
-
-    <label>
-        Length of commitment and when you can start? *
-    </label>
-
-    <input
-     type="text"
-     placeholder="e.g. 6 months, 1 year, 2 years, etc." >
-
-</div>
-
-
-
-
-
-
-
-<fieldset>
-
-
-<legend>
-About Yourself
-</legend>
-
-
-
-<textarea
-rows="5"
-placeholder="Tell us about yourself and why you would like to work with us..."
-></textarea>
-
-
-
-</fieldset>
-
-
-
-
-
-
-<fieldset>
-
-
-<legend>
-Upload Resume/CV
-</legend>
-
-
-
-<input
-type="file" accept="image/*"
->
-
-
-
-</fieldset>
-
-
-
-
-
-
-
-
-
-<fieldset>
-
-
-<legend>
-Anything else you would like us to know?
-</legend>
-
-
-<input
-type="search"
->
-
-
-</fieldset>
-
-
-
-
-
-
-
-
-
-
-<button type="submit">
-
-Submit
-
-</button>
-
-
-
-<button type="reset">
-
-Reset
-
-</button>
-
-
-
 </form>
 
-        
+     <hr>
+
+<div class="CRights"><small>Copyright Reserved - To their Respective Owner</small></div>       
 </body>
 </html>
