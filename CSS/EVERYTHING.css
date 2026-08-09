@@ -63,6 +63,21 @@ body {
         gap: 24px;
     }
 
+    
+    .contactcontainer {
+    width: 80%;
+    max-width: 840px;
+    margin: 40px auto;
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #818181;
+
+    display: block;
+    justify-items: center;
+    }
+    
+
     .container1 h1 {
         margin: 0;
         font-size: clamp(2rem, 2.5vw, 2.6rem);

@@ -27,24 +27,24 @@
         <legend><h1>Employment Application Form</h1></legend>
         <h2>Personal Information</h2>
         <label for="fullName">Full Name*</label>
-        <input type="text" id="fullName" placeholder="e.g. John Doe" required>
+        <input type="text" id="fullName" name="fullName"placeholder="e.g. John Doe" required>
         <label for="email">Email*</label>
-        <input type="email" id="email" placeholder="e.g. example@gmail.com" required>
+        <input type="email" id="email" name="email"placeholder="e.g. example@gmail.com" required>
         <label for="phone">Phone Number*</label>
-        <input type="tel" id="phone" placeholder="e.g. 12345678" required>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. 12345678" required>
         <label for="dob">Date of Birth*</label>
-        <input type="date" id="dob" required>
+        <input type="date" id="dob" name="dob" required>
 
         <label for="Nationality">Nationality*</label>
-        <select id="Nationality" required>
+        <select id="Nationality" name="Nationality" required>
             <option value="">Select Nationality</option>
             <option value="Singaporean">Singaporean</option>
             <option value="Permanent Resident">Permanent Resident</option>
         </select>
         <label for="NRIC">NRIC/FIN Number*</label>
-        <input type="text" id="NRIC" placeholder="e.g. S1234567A" required>
+        <input type="text" id="NRIC" name="NRIC" placeholder="e.g. S1234567A" required>
         <label for="address">Address*</label>
-        <input type="text" id="address" placeholder="e.g. 180 Ang Mo Kio Ave 8, Singapore 560180" required>
+        <input type="text" id="address" name="address" placeholder="e.g. 180 Ang Mo Kio Ave 8, Singapore 560180" required>
         
 
         <h2>Education Background</h2>
@@ -55,19 +55,19 @@
                 <th>Year of Graduation</th>
             </tr>
             <tr>
-                <td><input type="text" placeholder="e.g. High School, Diploma, Degree" required></td>
-                <td><input type="text" placeholder="e.g. Nanyang Polytechnic" required></td>
-                <td><input type="text" placeholder="e.g. 2020" required></td>
+                <td><input type="text" name="educationLevel" placeholder="e.g. High School, Diploma, Degree" required></td>
+                <td><input type="text" name="school" placeholder="e.g. Nanyang Polytechnic" required></td>
+                <td><input type="text" name="graduationYear" placeholder="e.g. 2020" required></td>
             </tr>
             <tr>
-                <td><input type="text" placeholder="e.g. High School, Diploma, Degree"></td>
-                <td><input type="text" placeholder="e.g. Nanyang Polytechnic"></td>
-                <td><input type="text" placeholder="e.g. 2020"></td>
+                <td><input type="text" name="educationLevel" placeholder="e.g. High School, Diploma, Degree"></td>
+                <td><input type="text" name="school" placeholder="e.g. Nanyang Polytechnic"></td>
+                <td><input type="text" name="graduationYear" placeholder="e.g. 2020"></td>
             </tr>
             <tr>
-                <td><input type="text" placeholder="e.g. High School, Diploma, Degree"></td>
-                <td><input type="text" placeholder="e.g. Nanyang Polytechnic"></td>
-                <td><input type="text" placeholder="e.g. 2020"></td>
+                <td><input type="text" name="educationLevel" placeholder="e.g. High School, Diploma, Degree"></td>
+                <td><input type="text" name="school" placeholder="e.g. Nanyang Polytechnic"></td>
+                <td><input type="text" name="graduationYear" placeholder="e.g. 2020"></td>
             </tr>
             
         </table>
@@ -80,19 +80,19 @@
                 <th>Duration of Employment</th>
             </tr>
             <tr>
-                <td><input type="text" placeholder="e.g. ABC Bakery"></td>
-                <td><input type="text" placeholder="e.g. Baker"></td>
-                <td><input type="text" placeholder="e.g. Jan 2020 - Dec 2021"></td>
+                <td><input type="text" name="companyName" placeholder="e.g. ABC Bakery"></td>
+                <td><input type="text" name="position" placeholder="e.g. Baker"></td>
+                <td><input type="text" name="employmentDuration" placeholder="e.g. Jan 2020 - Dec 2021"></td>
             </tr>
             <tr>
-                <td><input type="text" placeholder="e.g. ABC Bakery"></td>
-                <td><input type="text" placeholder="e.g. Baker"></td>
-                <td><input type="text" placeholder="e.g. Jan 2020 - Dec 2021"></td>
+                <td><input type="text" name="companyName" placeholder="e.g. ABC Bakery"></td>
+                <td><input type="text" name="position" placeholder="e.g. Baker"></td>
+                <td><input type="text" name="employmentDuration" placeholder="e.g. Jan 2020 - Dec 2021"></td>
             </tr>
             <tr>
-                <td><input type="text" placeholder="e.g. ABC Bakery"></td>
-                <td><input type="text" placeholder="e.g. Baker"></td>
-                <td><input type="text" placeholder="e.g. Jan 2020 - Dec 2021"></td>
+                <td><input type="text" name="companyName" placeholder="e.g. ABC Bakery"></td>
+                <td><input type="text" name="position" placeholder="e.g. Baker"></td>
+                <td><input type="text" name="employmentDuration" placeholder="e.g. Jan 2020 - Dec 2021"></td>
             </tr>
         </table>
         <p>(Input N/A if unable to.)</p>
@@ -100,7 +100,7 @@
         <h2>Employment Information</h2>
 
         <label for="ET">Employment Type*</label>
-        <select id="ET" required>
+        <select id="ET" name="employmentType" required>
             <option value="">Select Employment Type</option>
             <option value="full-time">Full-Time</option>
             <option value="part-time">Part-Time</option>
@@ -108,14 +108,14 @@
         </select>
 
         <label for="startDate">Available Start Date*</label>
-        <input type="date" id="startDate" required>
+        <input type="date" id="startDate" name="startDate" required>
         
         <label for="Length of Commitment">Length of Commitment*</label>
-        <input type="text" id="Length of Commitment" placeholder="e.g. 6 months, 1 year, 2 years" required>
+        <input type="text" id="Length of Commitment" name="commitmentLength" placeholder="e.g. 6 months, 1 year, 2 years" required>
 
 
         <label for="position">Position Applied For*</label> 
-        <select id="position" required>
+        <select id="position" name="position" required>
             <option value="">Select a position</option>
             <option value="baker">Baker</option>
             <option value="cashier">Cashier</option>
@@ -125,7 +125,7 @@
         </select>
 
         <label for="resume">Upload Resume/CVV*</label>
-        <input type="file" id="resume" accept=".pdf,.doc,.docx" required>  
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>  
 
         <button type="submit" class="btn">Submit Application</button>   
         <button type="reset" class="btn">Reset Form</button>   

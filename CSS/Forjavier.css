@@ -1,0 +1,25 @@
+    .topnav {
+        gap: 20px;
+        background: #fbde48;
+        padding: 16px ;
+
+        position: sticky;
+        display: flex; 
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .Tlogo {
+        height: 72px;
+        width: auto;
+    }
+    
+    .topnav a{
+    color: #99870f;
+    text-decoration: none;
+    }
+    
+    .topnav a:hover {
+    color: #6d5208;
+    transition: ease-in 0.3;
+    }

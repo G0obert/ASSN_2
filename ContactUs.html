@@ -20,10 +20,11 @@
             <h2><a href="ContactUs.html">Contact Us</a></h2>
      </nav>
 
-        <h1>Contact Us</h1>
-      <div class="container"> 
+      <h1 style="text-align: center;"><b>Contact Us</b></h1>
+      <div class="contactcontainer"> 
       <br>
-        <legend>Contact Information</legend>
+      <fieldset>
+        <legend><b>Contact Information</b></legend>
         <h2>
        Call, Email, or Visit Us for any inquiries</h2>
        <form>
@@ -45,6 +46,7 @@
         
      
        </form>
+       </fieldset>  
 
        
        </div>
@@ -56,8 +58,24 @@
 
     <br><br>
 
+    <label for="FT">Type of Feedback</label>
+    <select id="FT" name="FeedbackType" required>
+    <option value="">Select Feedback Type</option>
+    <option value="general">General Inquiry</option>
+    <option value="feedback">Feedback</option>
+    <option value="complaint">Complaint</option>
+    </select>
+      
+    <br><br>
+
+
     <label for="email">Email:</label><br>
     <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
 
     <br><br>
 
